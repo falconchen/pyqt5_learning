@@ -15,8 +15,7 @@ class Example(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    path = os.path.join(os.path.dirname(sys.modules[__name__].__file__), 'm.png')
-    print(path)
+    path = os.path.join(os.path.dirname(sys.modules[__name__].__file__), 'mac/filenew.png')
     app.setWindowIcon(QIcon(path))
     ex = Example()
     sys.exit(app.exec_())
